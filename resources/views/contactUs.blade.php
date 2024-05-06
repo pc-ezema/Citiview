@@ -121,7 +121,7 @@
 <!-- Google map start -->
 <div class="section">
     <div class="map">
-        <div id="map" class="contact-map"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.610104233615!2d3.9569986243804136!3d7.397509512391376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10399317b5d46737%3A0xf865c02348c75e54!2sOlubadan%20Estate.%2C%20Ibadan%20200113%2C%20Oyo!5e0!3m2!1sen!2sng!4v1715006577089!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>
 <!-- Google map end -->

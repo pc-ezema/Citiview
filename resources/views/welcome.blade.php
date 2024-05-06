@@ -578,7 +578,7 @@
             <!-- Main title -->
             <div class="main-title">
                 <h1>Our Facilties</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Indulge in Luxury: Explore Our Premium Facilities</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft delay-04s">
@@ -588,18 +588,7 @@
                         </div>
                         <div class="contant">
                             <h3><a href="#">24-hour Reception</a></h3>
-                            <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp delay-04s">
-                    <div class="services-box-2 d-flex">
-                        <div class="icon">
-                            <i class="flaticon-room-service"></i>
-                        </div>
-                        <div class="contant">
-                            <h3><a href="#">Room Service</a></h3>
-                            <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                            <p>Seamless Service Day and Night: Our 24-Hour Reception Ensures Your Comfort Anytime.</p>
                         </div>
                     </div>
                 </div>
@@ -610,7 +599,7 @@
                         </div>
                         <div class="contant">
                             <h3><a href="#">Flat Screen TV</a></h3>
-                            <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                            <p>Entertainment Elevated: Enjoy Your Favorite Shows on High-Definition Flat Screen TVs.</p>
                         </div>
                     </div>
                 </div>
@@ -620,8 +609,19 @@
                             <i class="flaticon-weightlifting"></i>
                         </div>
                         <div class="contant">
-                            <h3><a href="#">Gym</a></h3>
-                            <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                            <h3><a href="#">Gym & Pool</a></h3>
+                            <p>Fitness and Refreshment at Your Fingertips: Dive into Luxury with Our Gym & Pool Amenities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp delay-04s">
+                    <div class="services-box-2 d-flex">
+                        <div class="icon">
+                            <i class="flaticon-room-service"></i>
+                        </div>
+                        <div class="contant">
+                            <h3><a href="#">Room Service</a></h3>
+                            <p>Indulge in Luxury: Experience Personalized Room Service for Ultimate Comfort.</p>
                         </div>
                     </div>
                 </div>
@@ -632,18 +632,18 @@
                         </div>
                         <div class="contant">
                             <h3><a href="#">Free Parking</a></h3>
-                            <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                            <p>Convenience at Your Fingertips: Enjoy Complimentary Parking During Your Stay.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInRight delay-04s">
                     <div class="services-box-2 d-flex">
                         <div class="icon">
-                            <i class="flaticon-wifi-connection-signal-symbol"></i>
+                            <i class="flaticon-balcony-and-door"></i>
                         </div>
                         <div class="contant">
-                            <h3><a href="#">Free Wi-Fi</a></h3>
-                            <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                            <h3><a href="#">Event Center</a></h3>
+                            <p>Event Excellence: Unmatched Spaces for Memorable Gatherings.</p>
                         </div>
                     </div>
                 </div>
@@ -728,51 +728,15 @@
                                         <div class="property-inner">
                                             <div class="photo-overflow">
                                                 <div class="property-photo">
-                                                    <img class="img-fluid w-100" src="img/popular-places/img-1.jpg" alt="popular-places">
+                                                    <img class="img-fluid w-100" src="{{URL::asset('img/popular-places/Nigerian-Breweries.jpg')}}" alt="popular-places">
                                                 </div>
                                             </div>
                                             <div class="ling-section">
                                                 <h3>
-                                                    <a href="rooms-details.html">Australia Melbourne</a>
+                                                    <a href="">Nigeria Breweries</a>
                                                 </h3>
-                                                <p class="text">Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate</p>
-                                                <a href="rooms-details.html" class="read-more-btn">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="popular-places-item">
-                                        <div class="property-inner">
-                                            <div class="photo-overflow">
-                                                <div class="property-photo">
-                                                    <img class="img-fluid w-100" src="img/popular-places/img-2.jpg" alt="popular-places">
-                                                </div>
-                                            </div>
-                                            <div class="ling-section">
-                                                <h3>
-                                                    <a href="rooms-details.html">Dubai City</a>
-                                                </h3>
-                                                <p class="text">Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate</p>
-                                                <a href="rooms-details.html" class="read-more-btn">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="popular-places-item">
-                                        <div class="property-inner">
-                                            <div class="photo-overflow">
-                                                <div class="property-photo">
-                                                    <img class="img-fluid w-100" src="img/popular-places/img-3.jpg" alt="popular-places">
-                                                </div>
-                                            </div>
-                                            <div class="ling-section">
-                                                <h3>
-                                                    <a href="rooms-details.html">American Buffalo</a>
-                                                </h3>
-                                                <p class="text">Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate</p>
-                                                <a href="rooms-details.html" class="read-more-btn">Read More</a>
+                                                <!-- <p class="text">Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate</p> -->
+                                                <!-- <a href="" class="read-more-btn">Read More</a> -->
                                             </div>
                                         </div>
                                     </div>

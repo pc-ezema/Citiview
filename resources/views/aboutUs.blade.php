@@ -18,7 +18,10 @@
                             <h1>Relax in our Resort</h1>
                         </div>
                         <!-- paragraph -->
-                        <p>We welcome you to the best luxury hotel. It offers the highest level of comfort and relaxation. Large selection of rooms and apartments for every taste and for every need. Qualified staff, delicious dinners, bar, drinks, relaxation area and parking. A five-star hotel with history, atmosphere and a warm welcome.</p>
+                        <p>We welcome you to the best luxury hotel. It offers the highest level of comfort and relaxation.
+                            Large selection of rooms and apartments for every taste and for every need. Qualified staff, delicious dinners, bar, drinks, relaxation area and parking. A five-star hotel with history, atmosphere and a warm welcome.</p>
+
+                        <p>For those looking to host events or meetings, our hotel offers versatile venues and professional event planning services to ensure your gatherings are successful and memorable.</p>
                         <!-- ul -->
                         <ul class="clearfix">
                             <li>
@@ -71,7 +74,7 @@
     <div class="container">
         <div class="main-title">
             <h1>Our Facilties</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p>Indulge in Luxury: Explore Our Premium Facilities</p>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
@@ -84,7 +87,7 @@
                         <h3>
                             <a href="#">24-hour Reception</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                        <p>Seamless Service Day and Night: Our 24-Hour Reception Ensures Your Comfort Anytime.</p>
                     </div>
                 </div>
             </div>
@@ -92,13 +95,13 @@
                 <div class="services-box">
                     <div class="number">2</div>
                     <div class="icon">
-                        <i class="flaticon-school-call-phone-reception"></i>
+                        <i class="flaticon-graph-line-screen"></i>
                     </div>
                     <div class="detail">
                         <h3>
-                            <a href="#">Room Service</a>
+                            <a href="#">Flat Screen TV</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                        <p>Entertainment Elevated: Enjoy Your Favorite Shows on High-Definition Flat Screen TVs.</p>
                     </div>
                 </div>
             </div>
@@ -106,27 +109,26 @@
                 <div class="services-box">
                     <div class="number">3</div>
                     <div class="icon">
-                        <i class="flaticon-graph-line-screen"></i>
+                        <i class="flaticon-weightlifting"></i>
                     </div>
                     <div class="detail">
-                        <h3>
-                            <a href="#">Flat Screen TV</a>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                        <h3><a href="#">Gym & Pool</a></h3>
+                        <p>Fitness and Refreshment at Your Fingertips: Dive into Luxury with Our Gym & Pool Amenities.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="services-box">
                     <div class="number">4</div>
                     <div class="icon">
-                        <i class="flaticon-weightlifting"></i>
+                        <i class="flaticon-school-call-phone-reception"></i>
                     </div>
                     <div class="detail">
                         <h3>
-                            <a href="#">Gym</a>
+                            <a href="#">Room Service</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                        <p>Indulge in Luxury: Experience Personalized Room Service for Ultimate Comfort.</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +142,7 @@
                         <h3>
                             <a href="#">Free Parking</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                        <p>Convenience at Your Fingertips: Enjoy Complimentary Parking During Your Stay.</p>
                     </div>
                 </div>
             </div>
@@ -148,13 +150,11 @@
                 <div class="services-box">
                     <div class="number">6</div>
                     <div class="icon">
-                        <i class="flaticon-wifi-connection-signal-symbol"></i>
+                        <i class="flaticon-balcony-and-door"></i>
                     </div>
                     <div class="detail">
-                        <h3>
-                            <a href="#">Free Wi-Fi</a>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, conser adipisicing elit. Numquam deleniti amet quia voluptate laboriosam</p>
+                        <h3><a href="#">Event Center</a></h3>
+                        <p>Event Excellence: Our event center offers versatile spaces for Memorable Gatherings.</p>
                     </div>
                 </div>
             </div>
@@ -219,8 +219,8 @@
                                 <h5 class="left-line pl-40">Mr. Adeoluwa Babatunde Adekunle</h5>
                             </div>
                             <p>Staying at this hotel was an unforgettable experience! From the warm welcome at check-in to the impeccable room service, every aspect of my stay exceeded expectations.
-                                                    The room was spacious, clean, and beautifully decorated, providing a comfortable retreat after a busy day of exploring the city.
-                                                    The hotel's amenities, including the fitness center and pool, were top-notch and added to the overall enjoyment of my stay. I highly recommend this hotel to anyone looking for a luxurious and memorable experience in Ibadan.</p>
+                                The room was spacious, clean, and beautifully decorated, providing a comfortable retreat after a busy day of exploring the city.
+                                The hotel's amenities, including the fitness center and pool, were top-notch and added to the overall enjoyment of my stay. I highly recommend this hotel to anyone looking for a luxurious and memorable experience in Ibadan.</p>
                         </div>
                     </div>
                     <div class="item slide-box">

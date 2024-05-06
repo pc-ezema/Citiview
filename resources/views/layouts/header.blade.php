@@ -3,8 +3,8 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand logos" href="{{route('index')}}">
-                <img src="img/logos/logo.png" alt="logo" class="logo-photo">
-                <img src="img/logos/white-logo.png" alt="logo" class="logo-photo2">
+                <img src="img/logos/logo.jpg" alt="logo" class="logo-photo">
+                <img src="img/logos/logo.jpg" alt="logo" class="logo-photo2">
             </a>
             <button class="navbar-toggler" id="drawer" type="button">
                 <span class="fa fa-bars"></span>
