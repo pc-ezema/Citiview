@@ -6,7 +6,7 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item item active">
-                <img class="d-block w-100 h-100" src="img/banner/img-3.jpg" alt="banner">
+                <img class="d-block w-100 h-100" src="img/banner/img-1.jpg" alt="banner">
                 <div class="carousel-caption banner-slider-inner d-flex h-100">
                     <div class="carousel-content container align-self-center">
                         <div class="row bti-section">

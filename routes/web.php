@@ -11,5 +11,5 @@ Route::get('/single-rooms', [HomePageController::class, 'single'])->name('single
 Route::get('/mini-suites-roons', [HomePageController::class, 'mini'])->name('mini');
 Route::get('/double-rooms', [HomePageController::class, 'double'])->name('double');
 Route::get('/booking-system', [HomePageController::class, 'bookings'])->name('bookings');
-Route::get('/galery', [HomePageController::class, 'gallery'])->name('gallery');
+Route::get('/gallery', [HomePageController::class, 'gallery'])->name('gallery');
 Route::get('/faqs', [HomePageController::class, 'faqs'])->name('faqs');

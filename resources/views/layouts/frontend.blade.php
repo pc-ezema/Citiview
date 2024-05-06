@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" id="style_sheet" href="{{URL::asset('css/skins/default.css')}}">
 
     <!-- Favicon icon -->
-    <link rel="shortcut icon" href="{{URL::asset('img/favicon.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{URL::asset('img/logos/logo.jpg')}}" type="image/x-icon">
 
     <!-- Google fonts -->
     <link href="{{URL::asset('fonts.googleapis.com/css20158.css?family=Cormorant:wght@300;400;500;600;700&amp;display=swap')}}" rel="stylesheet">

@@ -14,7 +14,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-    'address' => '8/10 Olubadan Estate, New Ibadan/ Ife Road,.Opposite Gbagi Market Ibadan.',
+    'address' => '8/10 Olubadan Estate, New Ibadan/ Ife Road, Opposite Gbagi Market Ibadan.',
     'phone1' => '+2349167669209',
     'phone2' => '+2349159515873',
     'email' => 'info@citiview.ng',
