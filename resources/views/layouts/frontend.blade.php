@@ -21,13 +21,15 @@
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/slick.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/leaflet.css')}}" type="text/css">
 
+    {!! SEO::generate() !!}
+
     <!-- Custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/initial.css')}}">
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/style.css')}}">
-    <link rel="stylesheet" type="text/css" id="style_sheet" href="{{URL::asset('css/skins/default.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/skins/default.css')}}">
 
     <!-- Favicon icon -->
-    <link rel="shortcut icon" href="{{URL::asset('img/logos/logo.jpg')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{URL::asset('img/logos/favicon.ico')}}" type="image/x-icon">
 
     <!-- Google fonts -->
     <link href="{{URL::asset('fonts.googleapis.com/css20158.css?family=Cormorant:wght@300;400;500;600;700&amp;display=swap')}}" rel="stylesheet">
