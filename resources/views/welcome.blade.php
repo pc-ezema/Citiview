@@ -20,44 +20,32 @@
                             <div class="col-lg-5 col-md-12 wow fadeInRight delay-04s">
                                 <div class="search-area-box-2">
                                     <div class="search-contents">
-                                        <form method="GET">
+                                        <div id="successMessage" class="alert alert-success d-none"></div>
+                                        <form method="Post" action="{{route('search')}}">
+                                            @csrf
                                             <h4>Search Your <span>Rooms</span></h4>
                                             <div class="form-group">
-                                                <input type="text" class="btn-default datepicker" placeholder="Check In">
+                                                <input type="text" class="btn-default datepicker" placeholder="Check In" required>
                                             </div>
                                             <div class="form-group clearfix">
-                                                <input type="text" class="btn-default datepicker" placeholder="Check Out">
+                                                <input type="text" class="btn-default datepicker" placeholder="Check Out" required>
                                             </div>
                                             <div class="form-group clearfix">
-                                                <select class="selectpicker search-fields" name="room">
-                                                    <option>Room</option>
-                                                    <option>Single Room</option>
-                                                    <option>Double Room</option>
-                                                    <option>Deluxe Room</option>
+                                                <select class="selectpicker search-fields" name="room" required>
+                                                    <option>-- Select Room --</option>
+                                                    @foreach($rooms as $room)
+                                                    <option value="{{$room->id}}">{{ucfirst($room->type)}} Room</option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <select class="selectpicker search-fields" name="adults">
-                                                    <option>Adult</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
+                                                <input type="number" class="btn-default" placeholder="Enter number of child" required>
                                             </div>
                                             <div class="form-group">
-                                                <select class="selectpicker search-fields" name="children">
-                                                    <option>Child</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
+                                                <input type="number" class="btn-default" placeholder="Enter number of adult" required>
                                             </div>
                                             <div class="form-group mb-0">
-                                                <button class="w-100 btn-theme btn-4 btn-7">Search</button>
+                                                <button type="submit" class="w-100 btn-theme btn-4 btn-7">Search</button>
                                             </div>
                                         </form>
                                     </div>
@@ -88,46 +76,32 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
-                                    <input type="text" class="btn-default datepicker" placeholder="Check In">
+                                    <input type="text" class="btn-default datepicker" placeholder="Check In" required>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
-                                    <input type="text" class="btn-default datepicker" placeholder="Check Out">
+                                    <input type="text" class="btn-default datepicker" placeholder="Check Out" required>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
-                                    <select class="selectpicker search-fields" name="room">
-                                        <option>Room</option>
-                                        <option>Single Room</option>
-                                        <option>Double Room</option>
-                                        <option>Deluxe Room</option>
+                                    <select class="selectpicker search-fields" name="room" required>
+                                        <option>-- Select Room --</option>
+                                        @foreach($rooms as $room)
+                                        <option value="{{$room->id}}">{{ucfirst($room->type)}} Room</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
-                                    <select class="selectpicker search-fields" name="adults">
-                                        <option>Adult</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
+                                    <input type="number" class="btn-default" placeholder="Enter number of child" required>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
-                                    <select class="selectpicker search-fields" name="children">
-                                        <option>Child</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
+                                    <input type="number" class="btn-default" placeholder="Enter number of adult" required>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
@@ -196,16 +170,17 @@
             <!-- Main title -->
             <div class="main-title">
                 <h1>Our Best Rooms</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p>Indulge in Luxury: Experience Our Finest Accommodations</p>
             </div>
             <div class="row wow fadeInUp delay-04s">
+                @foreach($rooms as $room)
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="hotel-box">
                         <!-- Photo thumbnail -->
                         <div class="photo-thumbnail">
                             <div class="photo">
-                                <img src="img/room/img-1.jpg" alt="photo" class="img-fluid w-100">
-                                <a href="rooms-details.html">
+                                <img src="{{URL::asset('img/room/' . $room->image)}}" alt="photo" class="img-fluid w-100">
+                                <a href="{{route('roomDetails', Crypt::encrypt($room->id))}}">
                                     <span class="blog-one__plus"></span>
                                 </a>
                             </div>
@@ -217,23 +192,18 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star-half-full"></i>
                                 </div>
-                                $567.99/Night
+                                ₦{{number_format($room->price)}}/Night
                             </div>
                         </div>
                         <!-- Detail -->
                         <div class="detail clearfix">
                             <h3>
-                                <a href="rooms-details.html">Luxury Room</a>
+                                <a href="{{route('roomDetails', Crypt::encrypt($room->id))}}">{{ucfirst($room->type)}} Room</a>
                             </h3>
-                            <p class="location">
-                                <a href="rooms-details.html">
-                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </p>
                             <div class="fecilities">
                                 <ul>
                                     <li>
-                                        <i class="flaticon-bed"></i> Beds
+                                        <i class="flaticon-bed"></i> Bed
                                     </li>
                                     <li>
                                         <i class="flaticon-air-conditioning"></i>
@@ -245,7 +215,7 @@
                                     </li>
                                     <li>
                                         <i class="flaticon-weightlifting"></i>
-                                        GYM
+                                        Fridge
                                     </li>
                                     <li>
                                         <i class="flaticon-wifi-connection-signal-symbol"></i>
@@ -253,318 +223,14 @@
                                     </li>
                                     <li>
                                         <i class="flaticon-parking"></i>
-                                        Parking
+                                        Intercom
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="hotel-box">
-                        <!-- Photo thumbnail -->
-                        <div class="photo-thumbnail">
-                            <div class="photo">
-                                <img src="img/room/img-2.jpg" alt="phot" class="img-fluid w-100">
-                                <a href="rooms-details.html">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                            </div>
-                            <div class="pr">
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                                $567.99/Night
-                            </div>
-                        </div>
-                        <!-- Detail -->
-                        <div class="detail clearfix">
-                            <h3>
-                                <a href="rooms-details.html">Double Room</a>
-                            </h3>
-                            <p class="location">
-                                <a href="rooms-details.html">
-                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </p>
-                            <div class="fecilities">
-                                <ul>
-                                    <li>
-                                        <i class="flaticon-bed"></i> Beds
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-air-conditioning"></i>
-                                        AC
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-graph-line-screen"></i>
-                                        TV
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-weightlifting"></i>
-                                        GYM
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-wifi-connection-signal-symbol"></i>
-                                        Wi-fi
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-parking"></i>
-                                        Parking
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="hotel-box">
-                        <!-- Photo thumbnail -->
-                        <div class="photo-thumbnail">
-                            <div class="photo">
-                                <img src="img/room/img-4.jpg" alt="photo" class="img-fluid w-100">
-                                <a href="rooms-details.html">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                            </div>
-                            <div class="pr">
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                                $567.99/Night
-                            </div>
-                        </div>
-                        <!-- Detail -->
-                        <div class="detail clearfix">
-                            <h3>
-                                <a href="rooms-details.html">Single Room</a>
-                            </h3>
-                            <p class="location">
-                                <a href="rooms-details.html">
-                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </p>
-                            <div class="fecilities">
-                                <ul>
-                                    <li>
-                                        <i class="flaticon-bed"></i> Beds
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-air-conditioning"></i>
-                                        AC
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-graph-line-screen"></i>
-                                        TV
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-weightlifting"></i>
-                                        GYM
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-wifi-connection-signal-symbol"></i>
-                                        Wi-fi
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-parking"></i>
-                                        Parking
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="hotel-box">
-                        <!-- Photo thumbnail -->
-                        <div class="photo-thumbnail">
-                            <div class="photo">
-                                <img src="img/room/img-3.jpg" alt="photo" class="img-fluid w-100">
-                                <a href="rooms-details.html">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                            </div>
-                            <div class="pr">
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                                $567.99/Night
-                            </div>
-                        </div>
-                        <!-- Detail -->
-                        <div class="detail clearfix">
-                            <h3>
-                                <a href="rooms-details.html">Single Room </a>
-                            </h3>
-                            <p class="location">
-                                <a href="rooms-details.html">
-                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </p>
-                            <div class="fecilities">
-                                <ul>
-                                    <li>
-                                        <i class="flaticon-bed"></i> Beds
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-air-conditioning"></i>
-                                        AC
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-graph-line-screen"></i>
-                                        TV
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-weightlifting"></i>
-                                        GYM
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-wifi-connection-signal-symbol"></i>
-                                        Wi-fi
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-parking"></i>
-                                        Parking
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="hotel-box">
-                        <!-- Photo thumbnail -->
-                        <div class="photo-thumbnail">
-                            <div class="photo">
-                                <img src="img/room/img-5.jpg" alt="photo" class="img-fluid w-100">
-                                <a href="rooms-details.html">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                            </div>
-                            <div class="pr">
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                                $567.99/Night
-                            </div>
-                        </div>
-                        <!-- Detail -->
-                        <div class="detail clearfix">
-                            <h3>
-                                <a href="rooms-details.html">Luxury Room</a>
-                            </h3>
-                            <p class="location">
-                                <a href="rooms-details.html">
-                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </p>
-                            <div class="fecilities">
-                                <ul>
-                                    <li>
-                                        <i class="flaticon-bed"></i> Beds
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-air-conditioning"></i>
-                                        AC
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-graph-line-screen"></i>
-                                        TV
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-weightlifting"></i>
-                                        GYM
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-wifi-connection-signal-symbol"></i>
-                                        Wi-fi
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-parking"></i>
-                                        Parking
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="hotel-box">
-                        <!-- Photo thumbnail -->
-                        <div class="photo-thumbnail">
-                            <div class="photo">
-                                <img src="img/room/img-6.jpg" alt="photo" class="img-fluid w-100">
-                                <a href="rooms-details.html">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                            </div>
-                            <div class="pr">
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                                $567.99/Night
-                            </div>
-                        </div>
-                        <!-- Detail -->
-                        <div class="detail clearfix">
-                            <h3>
-                                <a href="rooms-details.html">Double Room</a>
-                            </h3>
-                            <p class="location">
-                                <a href="rooms-details.html">
-                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </p>
-                            <div class="fecilities">
-                                <ul>
-                                    <li>
-                                        <i class="flaticon-bed"></i> Beds
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-air-conditioning"></i>
-                                        AC
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-graph-line-screen"></i>
-                                        TV
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-weightlifting"></i>
-                                        GYM
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-wifi-connection-signal-symbol"></i>
-                                        Wi-fi
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-parking"></i>
-                                        Parking
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

@@ -44,7 +44,7 @@
                             <li>
                                 <a href="{{route('double')}}">Double</a>
                             </li>
-                        </ul>    
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">

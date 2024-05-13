@@ -10,8 +10,11 @@ Route::post('/submit/contact-us', [HomePageController::class, 'submitContact'])-
 Route::get('/rooms/single-rooms', [HomePageController::class, 'single'])->name('single');
 Route::get('/rooms/mini-suites-rooms', [HomePageController::class, 'mini'])->name('mini');
 Route::get('/rooms/double-rooms', [HomePageController::class, 'double'])->name('double');
-Route::get('/rooms/details', [HomePageController::class, 'roomDetails'])->name('roomDetails');
+Route::get('/rooms/details/{room_id}', [HomePageController::class, 'roomDetails'])->name('roomDetails');
 Route::get('/booking-system', [HomePageController::class, 'bookings'])->name('bookings');
 Route::get('/gallery', [HomePageController::class, 'gallery'])->name('gallery');
 Route::get('/faqs', [HomePageController::class, 'faqs'])->name('faqs');
+
+Route::post('/search', [HomePageController::class, 'search'])->name('search');
+Route::post('/book-now', [HomePageController::class, 'bookNow'])->name('bookNow');
 

@@ -14,14 +14,11 @@
                     <!-- Heading courses start -->
                     <div class="heading-rooms  clearfix">
                         <div class="pull-left">
-                            <h3>Super Deluxe Room</h3>
-                            <p>
-                                <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
-                            </p>
+                            <h3>{{ucfirst($room->type)}} Room</h3>
                         </div>
                         <div class="pull-right">
-                            <h3><span>$260.00</span></h3>
-                            <h5>Per Manth</h5>
+                            <h3><span>₦{{number_format($room->price)}}</span></h3>
+                            <h5>Per Night</h5>
                         </div>
                     </div>
                     <!-- Heading courses end -->
@@ -31,7 +28,7 @@
                         <!--  Rooms detail slider start -->
                         <div class="rooms-detail-slider mb-40">
                             <div class="slider slider-for">
-                                <div><img src="{{URL::asset('img/room/img-2.jpg')}}" class="w-100 img-fluid" alt="photo"></div>
+                                <div><img src="{{URL::asset('img/room/' . $room->image)}}" class="w-100 img-fluid" alt="photo"></div>
                             </div>
                         </div>
                         <!-- Rooms detail slider end -->
@@ -45,7 +42,7 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Amenities</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
+                                <!-- <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">House Rules</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
@@ -56,7 +53,7 @@
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="contact-tab-4" data-bs-toggle="tab" data-bs-target="#contact-4" type="button" role="tab" aria-controls="contact-4" aria-selected="false">Extra Service</button>
-                                </li>
+                                </li> -->
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active mb-50" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -66,9 +63,7 @@
                                                 <!-- Title -->
                                                 <h3>Rooms Description</h3>
                                                 <!-- paragraph -->
-                                                <p>Lorem ipsum dolor sit amet, conser adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a conser nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed
-                                                    tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra a. Aliquam pellentesque nibh et nibh feugiat gravida. Maecenas ultricies, diam vitae semper placerat, velit risus accumsan nisl, eget tempor lacus est vel nunc. Proin accumsan elit sed neque euismod
-                                                    fringilla. Curabitur lobortis nunc velit,</p>
+                                                <p>{{$room->description}}</p>
                                              </div>
                                         </div>
                                     </div>
@@ -89,32 +84,20 @@
                                                                 <i class="flaticon-balcony-and-door"></i>Balcony
                                                             </li>
                                                             <li>
-                                                                <i class="flaticon-weightlifting"></i>Gym
-                                                            </li>
-                                                            <li>
                                                                 <i class="flaticon-parking"></i>Parking
-                                                            </li>
-                                                            <li>
-                                                                <i class="flaticon-sunbed"></i>Beach View
                                                             </li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                                         <ul class="condition">
                                                             <li>
-                                                                <i class="flaticon-bed"></i>2 Bedroom
-                                                            </li>
-                                                            <li>
-                                                                <i class="flaticon-person-learning-by-reading"></i>Free Newspaper
-                                                            </li>
-                                                            <li>
-                                                                <i class="flaticon-swimming-silhouette"></i>Use of pool
+                                                                <i class="flaticon-bed"></i>@if($room->type == 'mini-suites')  6 by 6 Bed @else  4 by 6 Bed @endif
                                                             </li>
                                                             <li>
                                                                 <i class="flaticon-graph-line-screen"></i>TV
                                                             </li>
                                                             <li>
-                                                                <i class="flaticon-no-smoking-sign"></i>No Smoking
+                                                                <i class="flaticon-person-learning-by-reading"></i>Fridge
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -124,13 +107,7 @@
                                                                 <i class="flaticon-room-service"></i>Room Service
                                                             </li>
                                                             <li>
-                                                                <i class="flaticon-breakfast"></i>Breakfast
-                                                            </li>
-                                                            <li>
-                                                                <i class="flaticon-phone-receiver"></i>Telephone
-                                                            </li>
-                                                            <li>
-                                                                <i class="flaticon-bed"></i>2 Bedroom
+                                                                <i class="flaticon-phone-receiver"></i>Intercom
                                                             </li>
                                                             <li>
                                                                 <i class="flaticon-wifi-connection-signal-symbol"></i>Free Wi-Fi
@@ -140,107 +117,6 @@
                                                 </div>
                                             </div>
                                             <!-- Amenities end -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade mb-50" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    <div class="accordion accordion-flush" id="accordionFlushExample3">
-                                        <div class="accordion-item">
-                                            <!-- House reles start -->
-                                            <div class="house-rules">
-                                                <h3>House Rules</h3>
-                                                <ul>
-                                                    <li><i class="fa fa-hand-o-right"></i> Check-in: 10:00 AM - 7:00 PM</li>
-                                                    <li><i class="fa fa-hand-o-right"></i> Checkout: 11:00 AM</li>
-                                                    <li><i class="fa fa-hand-o-right"></i> No smoking</li>
-                                                    <li><i class="fa fa-hand-o-right"></i> No pets</li>
-                                                    <li><i class="fa fa-hand-o-right"></i> No parties or events</li>
-                                                    <li><i class="fa fa-hand-o-right"></i> Lorem ipsum dolor sit amet, conser adipiscing elit. Donec luctus</li>
-                                                </ul>
-                                            </div>
-                                            <!-- House reles end -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade mb-50" id="contact-5" role="tabpanel" aria-labelledby="contact-tab-5">
-                                    <div class="accordion accordion-flush" id="accordionFlushExample5">
-                                        <div class="accordion-item">
-                                            <!-- Pricing plans start -->
-                                            <div class="pricing-table">
-                                                <h3>Pricing Plans</h3>
-                                                <table class="table-responsive pricing-wrap">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Mon</th>
-                                                            <th>Tue</th>
-                                                            <th>Wed</th>
-                                                            <th>Thu</th>
-                                                            <th>Fri</th>
-                                                            <th>Sat</th>
-                                                            <th>Sun</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>$250</td>
-                                                            <td>$250</td>
-                                                            <td>$250</td>
-                                                            <td>$250</td>
-                                                            <td>$250</td>
-                                                            <td>$250</td>
-                                                            <td>$250</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <!-- Pricing plans end -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade mb-50" id="contact-6" role="tabpanel" aria-labelledby="contact-tab-6">
-                                    <div class="accordion accordion-flush" id="accordionFlushExample6">
-                                        <div class="accordion-item">
-                                            <!-- Cancellation start  -->
-                                            <div class="cancellation">
-                                                <h3>Cancellation</h3>
-                                                <p>
-                                                    Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus
-                                                    mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu
-                                                    dolor. <strong>Cancel up</strong> to <strong>21 days</strong> to get a full refund.
-                                                </p>
-                                            </div>
-                                            <!-- Cancellation end -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade mb-50" id="contact-4" role="tabpanel" aria-labelledby="contact-tab-4">
-                                    <div class="accordion accordion-flush" id="accordionFlushExample4">
-                                        <div class="accordion-item">
-                                            <!-- Extra service start  -->
-                                            <div class="extra-service">
-                                                <h3>Extra Service</h3>
-                                                <div class="extra-service-item">
-                                                    <p class="tag-item-name">Air Conditioner </p>
-                                                    <div class="border-centar"></div>
-                                                    <div class="label-items-value"><span class="price">+24$</span>to price per person </div>
-                                                </div>
-                                                <div class="extra-service-item">
-                                                    <p class="tag-item-name">Free Internet </p>
-                                                    <div class="border-centar"></div>
-                                                    <div class="label-items-value"><span class="price">+14$</span>to price per person </div>
-                                                </div>
-                                                <div class="extra-service-item">
-                                                    <p class="tag-item-name">LCD Television </p>
-                                                    <div class="border-centar"></div>
-                                                    <div class="label-items-value"><span class="price">+15$</span>to price per person </div>
-                                                </div>
-                                                <div class="extra-service-item">
-                                                    <p class="tag-item-name">Microwave </p>
-                                                    <div class="border-centar"></div>
-                                                    <div class="label-items-value"><span class="price">+30$</span>to price per person </div>
-                                                </div>
-                                            </div>
-                                            <!-- Extra service end  -->
                                         </div>
                                     </div>
                                 </div>
@@ -256,70 +132,65 @@
                     <!-- Search area box 3 start -->
                     <div class="sidebar-widget search-area-box-3 clearfix">
                         <h3>Check Availability</h3>
-                        <h4 class="price">$260/Night</h4>
+                        <h4 class="price">₦{{number_format($room->price)}}/Night</h4>
                         <div class="search-contents">
-                            <form method="GET">
+                            <div id="successMessage" class="alert alert-success d-none"></div>
+                            <form id="bookingForm">
                                 <div class="search-your-details">
                                     <div class="row">
-                                        <div class="col-md-12 col-sm-6">
+                                        <div class="col-12">
                                             <div class="form-group">
-                                                <input type="text" class="btn-default datepicker" placeholder="Check In">
+                                                <input type="text" class="btn-default" placeholder="Enter your full name" name="full_name" required>
+                                                <span id="full_nameError" class="text-danger error-message"></span>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 col-sm-6">
+                                        <div class="col-12">
                                             <div class="form-group">
-                                                <input type="text" class="btn-default datepicker" placeholder="Check Out">
+                                                <input type="email" class="btn-default" placeholder="Enter your email address" name="email_address" required>
+                                                <span id="email_addressError" class="text-danger error-message"></span>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-6">
+                                        <div class="col-12">
                                             <div class="form-group">
-                                                <select class="selectpicker search-fields" name="room">
-                                                    <option>Room</option>
-                                                    <option>Single Room</option>
-                                                    <option>Double Room</option>
-                                                    <option>Deluxe Room</option>
+                                                <input type="tel" class="btn-default" placeholder="Enter your phone number" name="phone_number" required>
+                                                <span id="phone_numberError" class="text-danger error-message"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="text" class="btn-default datepicker" placeholder="Check In" name="check_in">
+                                                <span id="check_inError" class="text-danger error-message"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="text" class="btn-default datepicker" placeholder="Check Out" name="check_out">
+                                                <span id="check_outError" class="text-danger error-message"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <select class="selectpicker search-fields" name="room" required>
+                                                    <option value="{{$room->id}}">{{ucfirst($room->type)}} Room</option>
                                                 </select>
+                                                <span id="roomError" class="text-danger error-message"></span>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-6">
+                                        <div class="col-12">
                                             <div class="form-group">
-                                                <select class="selectpicker search-fields" name="beds">
-                                                    <option>Beds</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
+                                                <input type="number" class="btn-default" placeholder="Enter number of adult" name="adult" required>
+                                                <span id="adultError" class="text-danger error-message"></span>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-6">
+                                        <div class="col-12">
                                             <div class="form-group">
-                                                <select class="selectpicker search-fields" name="adults">
-                                                    <option>Adult</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <select class="selectpicker search-fields" name="children">
-                                                    <option>Child</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
+                                                <input type="number" class="btn-default" placeholder="Enter number of child" name="child" required>
+                                                <span id="childError" class="text-danger error-message"></span>
                                             </div>
                                         </div>
                                         <div class="col-md-12 col-sm-12">
                                             <div class="form-group mb-0">
-                                                <button type="submit" class="btn-md btn-theme btn-4 btn-7 w-100">Book Now</button>
+                                                <button type="submit" class="btn-md btn-theme btn-4 btn-7 w-100" id="bookingBtn">Book Now</button>
                                             </div>
                                         </div>
                                     </div>
@@ -333,5 +204,55 @@
     </div>
 </div>
 <!-- Rooms detail section end -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#bookingForm').submit(function (e) {
+            e.preventDefault(); // Prevent default form submission
 
+            // Serialize form data
+            var formData = new FormData($(this)[0]);
+
+            // Disable submit button and show loading state
+            $('#bookingBtn').attr('disabled', true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing request...');
+
+            // Send Ajax request
+            $.ajax({
+                url: "{{ route('bookNow') }}",
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') // Include the CSRF token in the headers
+                },
+                success: function (response) {
+                    // Clear previous error messages
+                    $('.error-message').text('');
+
+                    // Handle success response
+                    if (response.success) {
+                        // Display success message
+                        $('#successMessage').text(response.message).removeClass('d-none');
+
+                        $('#bookingBtn').attr('disabled', false).html('Book Now');
+                    } else {
+                        // Display validation errors
+                        $.each(response.errors, function (key, value) {
+                            $('#' + key + 'Error').text(value);
+                        });
+
+                        $('#bookingBtn').attr('disabled', false).html('Book Now');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    // Handle Ajax error
+                    console.error(xhr.responseText);
+
+                    $('#bookingBtn').attr('disabled', false).html('Book Now');
+                }
+            });
+        });
+    });
+</script>
 @endsection

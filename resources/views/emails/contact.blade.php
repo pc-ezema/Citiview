@@ -145,7 +145,7 @@
                                                 <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 25px;padding-left: 25px;" align="center"><![endif]-->
                                                 <div style="font-size:1px;line-height:25px">&nbsp;</div><img
                                                     class="center  autowidth " align="center" border="0"
-                                                    src="{{URL::asset('assets/img/logo.png')}}" alt="Image" title="Image"
+                                                    src="{{URL::asset('img/logos/logo.jpg')}}" alt="Image" title="Image"
                                                     style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block; width: 200px">
                                                 <div style="font-size:1px;line-height:25px">&nbsp;</div>
                                                 <!--[if mso]></td></tr></table><![endif]-->
@@ -163,8 +163,8 @@
                     <div>
                         <div class="block-grid "
                             style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: rgb(15, 22, 101);">
-                            <div style="border-collapse: collapse;display: table;width: 100%;background-color:rgb(99, 39, 235);">
-                                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#283C4B;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:rgb(99, 39, 235)"><![endif]-->
+                            <div style="border-collapse: collapse;display: table;width: 100%;background-color:rgb(15, 22, 101);">
+                                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#283C4B;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:rgb(15, 22, 101)"><![endif]-->
                                 <!--[if (mso)|(IE)]><td align="center" width="600" style=";width:600px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:0px; padding-bottom:0px;"><![endif]-->
                                 <div class="col num12"
                                     style="min-width: 320px; max-width: 600px; display: table-cell; vertical-align: top; width: 600px;">
@@ -206,7 +206,7 @@
                                     <div style="width:100% !important;">
                                         <!--[if (!mso)&(!IE)]><!-->
                                         <div
-                                            style="border-top:0px solid transparent; border-left:1px solid rgb(99, 39, 235); border-right:1px solid rgb(99, 39, 235); border-bottom:0px solid transparent; padding-top:0px; padding-bottom:15px; padding-right: 0px; padding-left: 0px;">
+                                            style="border-top:0px solid transparent; border-left:1px solid rgb(15, 22, 101); border-right:1px solid rgb(15, 22, 101); border-bottom:0px solid transparent; padding-top:0px; padding-bottom:15px; padding-right: 0px; padding-left: 0px;">
                                             <!--<![endif]-->
                                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
                                             <div
@@ -256,7 +256,7 @@
                                     <div style="width:100% !important;">
                                         <!--[if (!mso)&(!IE)]><!-->
                                         <div
-                                            style="border-top:1px solid rgb(99, 39, 235); border-left:1px solid rgb(99, 39, 235); border-bottom:0px solid transparent; border-right:1px solid rgb(99, 39, 235); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
+                                            style="border-top:1px solid rgb(15, 22, 101); border-left:1px solid rgb(15, 22, 101); border-bottom:0px solid transparent; border-right:1px solid rgb(15, 22, 101); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                                             <!--<![endif]-->
                                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
                                             <div
@@ -265,9 +265,9 @@
                                                     style="line-height: 1.2; font-size: 12px; color: #555555; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 14px;">
                                                     <p
                                                         style="font-size: 22px; line-height: 1.2; word-break: break-word; text-align: center; mso-line-height-alt: 26px; margin: 0;">
-                                                        <span style="color: rgb(99, 39, 235); font-size: 22px;"><span
-                                                                style="color: rgb(99, 39, 235);"><span
-                                                                    style="color: rgb(99, 39, 235);">User's
+                                                        <span style="color: rgb(15, 22, 101); font-size: 22px;"><span
+                                                                style="color: rgb(15, 22, 101);"><span
+                                                                    style="color: rgb(15, 22, 101);">User's
                                                                     Information</span></span></span>
                                                     </p>
                                                 </div>
@@ -289,7 +289,7 @@
                             <div
                                 style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
                                 <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
-                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(99, 39, 235);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(99, 39, 235);"><![endif]-->
+                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(15, 22, 101);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(15, 22, 101);"><![endif]-->
                                 <div class="col num4"
                                     style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 200px; background-color: rgb(15, 22, 101); width: 200px;">
                                     <div style="width:100% !important;">
@@ -315,13 +315,13 @@
                                     </div>
                                 </div>
                                 <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(99, 39, 235); border-left: 0px solid transparent; border-bottom: 1px solid rgb(99, 39, 235); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
+                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(15, 22, 101); border-left: 0px solid transparent; border-bottom: 1px solid rgb(15, 22, 101); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
                                 <div class="col num8"
                                     style="display: table-cell; vertical-align: top; min-width: 320px; max-width: 400px; background-color: #fff; width: 400px;">
                                     <div style="width:100% !important;">
                                         <!--[if (!mso)&(!IE)]><!-->
                                         <div
-                                            style="border-top:1px solid rgb(99, 39, 235); border-left:0px solid transparent; border-right:1px solid rgb(99, 39, 235); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
+                                            style="border-top:1px solid rgb(15, 22, 101); border-left:0px solid transparent; border-right:1px solid rgb(15, 22, 101); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                                             <!--<![endif]-->
                                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
                                             <div
@@ -350,7 +350,7 @@
                             <div
                                 style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
                                 <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
-                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(99, 39, 235);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(99, 39, 235);"><![endif]-->
+                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(15, 22, 101);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(15, 22, 101);"><![endif]-->
                                 <div class="col num4"
                                     style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 200px; background-color: rgb(15, 22, 101); width: 200px;">
                                     <div style="width:100% !important;">
@@ -376,13 +376,13 @@
                                     </div>
                                 </div>
                                 <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(99, 39, 235); border-left: 0px solid transparent; border-bottom: 1px solid rgb(99, 39, 235); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
+                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(15, 22, 101); border-left: 0px solid transparent; border-bottom: 1px solid rgb(15, 22, 101); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
                                 <div class="col num8"
                                     style="display: table-cell; vertical-align: top; min-width: 320px; max-width: 400px; background-color: #fff; width: 400px;">
                                     <div style="width:100% !important;">
                                         <!--[if (!mso)&(!IE)]><!-->
                                         <div
-                                            style="border-top:1px solid rgb(99, 39, 235); border-left:0px solid transparent; border-right:1px solid rgb(99, 39, 235); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
+                                            style="border-top:1px solid rgb(15, 22, 101); border-left:0px solid transparent; border-right:1px solid rgb(15, 22, 101); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                                             <!--<![endif]-->
                                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
                                             <div
@@ -411,7 +411,7 @@
                             <div
                                 style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
                                 <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
-                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(99, 39, 235);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(99, 39, 235);"><![endif]-->
+                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(15, 22, 101);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(15, 22, 101);"><![endif]-->
                                 <div class="col num4"
                                     style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 200px; background-color: rgb(15, 22, 101); width: 200px;">
                                     <div style="width:100% !important;">
@@ -437,13 +437,13 @@
                                     </div>
                                 </div>
                                 <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(99, 39, 235); border-left: 0px solid transparent; border-bottom: 1px solid rgb(99, 39, 235); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
+                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(15, 22, 101); border-left: 0px solid transparent; border-bottom: 1px solid rgb(15, 22, 101); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
                                 <div class="col num8"
                                     style="display: table-cell; vertical-align: top; min-width: 320px; max-width: 400px; background-color: #fff; width: 400px;">
                                     <div style="width:100% !important;">
                                         <!--[if (!mso)&(!IE)]><!-->
                                         <div
-                                            style="border-top:1px solid rgb(99, 39, 235); border-left:0px solid transparent; border-right:1px solid rgb(99, 39, 235); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
+                                            style="border-top:1px solid rgb(15, 22, 101); border-left:0px solid transparent; border-right:1px solid rgb(15, 22, 101); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                                             <!--<![endif]-->
                                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
                                             <div
@@ -472,7 +472,7 @@
                             <div
                                 style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
                                 <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
-                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(99, 39, 235);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(99, 39, 235);"><![endif]-->
+                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(15, 22, 101);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(15, 22, 101);"><![endif]-->
                                 <div class="col num4"
                                     style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 200px; background-color: rgb(15, 22, 101); width: 200px;">
                                     <div style="width:100% !important;">
@@ -498,13 +498,13 @@
                                     </div>
                                 </div>
                                 <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(99, 39, 235); border-left: 0px solid transparent; border-bottom: 1px solid rgb(99, 39, 235); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
+                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(15, 22, 101); border-left: 0px solid transparent; border-bottom: 1px solid rgb(15, 22, 101); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
                                 <div class="col num8"
                                     style="display: table-cell; vertical-align: top; min-width: 320px; max-width: 400px; background-color: #fff; width: 400px;">
                                     <div style="width:100% !important;">
                                         <!--[if (!mso)&(!IE)]><!-->
                                         <div
-                                            style="border-top:1px solid rgb(99, 39, 235); border-left:0px solid transparent; border-right:1px solid rgb(99, 39, 235); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
+                                            style="border-top:1px solid rgb(15, 22, 101); border-left:0px solid transparent; border-right:1px solid rgb(15, 22, 101); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                                             <!--<![endif]-->
                                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
                                             <div
@@ -533,7 +533,7 @@
                             <div
                                 style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
                                 <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
-                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(99, 39, 235);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(99, 39, 235);"><![endif]-->
+                                <!--[if (mso)|(IE)]><td align="center" width="200" style="background-color:rgb(15, 22, 101);;width:200px; border-top: 0px solid #FFFFFF; border-left: 0px solid transparent; border-bottom: 0px solid #FFFFFF; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:rgb(15, 22, 101);"><![endif]-->
                                 <div class="col num4"
                                     style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 200px; background-color: rgb(15, 22, 101); width: 200px;">
                                     <div style="width:100% !important;">
@@ -559,13 +559,13 @@
                                     </div>
                                 </div>
                                 <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(99, 39, 235); border-left: 0px solid transparent; border-bottom: 1px solid rgb(99, 39, 235); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
+                                <!--[if (mso)|(IE)]></td><td align="center" width="400" style="background-color:#fff;;width:400px; border-top: 1px solid rgb(15, 22, 101); border-left: 0px solid transparent; border-bottom: 1px solid rgb(15, 22, 101); border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;background-color:#fff;"><![endif]-->
                                 <div class="col num8"
                                     style="display: table-cell; vertical-align: top; min-width: 320px; max-width: 400px; background-color: #fff; width: 400px;">
                                     <div style="width:100% !important;">
                                         <!--[if (!mso)&(!IE)]><!-->
                                         <div
-                                            style="border-top:1px solid rgb(99, 39, 235); border-left:0px solid transparent; border-bottom:1px solid rgb(99, 39, 235); border-right:1px solid rgb(99, 39, 235); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
+                                            style="border-top:1px solid rgb(15, 22, 101); border-left:0px solid transparent; border-bottom:1px solid rgb(15, 22, 101); border-right:1px solid rgb(15, 22, 101); padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                                             <!--<![endif]-->
                                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
                                             <div
@@ -588,42 +588,6 @@
                             </div>
                         </div>
                     </div>
-                    <div style="background-color:transparent;">
-                        <div class="block-grid "
-                            style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
-                            <div
-                                style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
-                                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
-                                <!--[if (mso)|(IE)]><td align="center" width="600" style=";width:600px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:0px; padding-bottom:0px;"><![endif]-->
-                                <div class="col num12"
-                                    style="min-width: 320px; max-width: 600px; display: table-cell; vertical-align: top; width: 600px;">
-                                    <div style="width:100% !important;">
-                                        <!--[if (!mso)&(!IE)]><!-->
-                                        <div
-                                            style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:0px; padding-bottom:0px; padding-right: 0px; padding-left: 0px;">
-                                            <!--<![endif]-->
-                                            <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
-                                            <div
-                                                style="color:#555555;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
-                                                <div
-                                                    style="line-height: 1.2; font-size: 12px; color: #555555; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 14px;">
-                                                    <p
-                                                        style="line-height: 1.2; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                                        ...</p>
-                                                </div>
-                                            </div>
-                                            <!--[if mso]></td></tr></table><![endif]-->
-                                            <!--[if (!mso)&(!IE)]><!-->
-                                        </div>
-                                        <!--<![endif]-->
-                                    </div>
-                                </div>
-                                <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                                <!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
-                            </div>
-                        </div>
-                    </div>
-                    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                 </td>
             </tr>
         </tbody>

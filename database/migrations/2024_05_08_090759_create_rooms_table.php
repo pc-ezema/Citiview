@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
             $table->enum('type', ['single', 'mini-suites', 'double'])->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
             $table->double('price')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
