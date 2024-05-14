@@ -218,7 +218,7 @@ class HomePageController extends Controller
         // Return success response
         return response()->json([
             'success' => true,
-            'message' => 'Thank you for booking with us! Your room reservation has been successfully confirmed. We look forward to welcoming you on '.Carbon::createFromFormat('m/d/Y', $request->check_in)->format('F j, Y').' and ensuring you have a delightful stay with us. Please call our 24/7 Phone numbers to advise us of your arrival time. Safe travels until we meet!',
+            'message' => 'Thank you for booking with us! Your room reservation has been successfully confirmed. We look forward to welcoming you on '.Carbon::createFromFormat('m/d/Y', $request->check_in)->format('F j, Y').' and ensuring you have a delightful stay with us. Please call our 24/7 Phone numbers [+2349167669209, +2349159515873] to advise us of your arrival time. Safe travels until we meet!',
         ]);
     }
 
