@@ -200,6 +200,7 @@
                     <p style="text-align: justify;">Congratulations on completing your booking! Your reservation is confirmed, and we're thrilled to have you stay with us. Get ready for a fantadyiv experience ahead.
                       Should you have any inquiries or need further assistance, feel free to contact us. We're here to make your stay memorable!.
                     </p>
+                    <p>Please call our 24/7 Phone numbers [+2349167669209, +2349159515873] to advise us of your arrival time.</p>
                     <p>Below are your informations:</p>
                     <ul>
                       <li>Room Type: <span style="font-weight: 800;">{{$room}}</span></li>
