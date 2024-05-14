@@ -6,38 +6,38 @@
     </div>
     <div class="sidebar-inner">
         <div class="sidebar-logo">
-            <img src="img/logos/logo.png" alt="sidebarlogo">
+            <img src="{{URL::asset('img/logos/logo.jpg')}}" alt="sidebarlogo">
         </div>
         <div class="sidebar-navigation">
             <h3 class="heading">Pages</h3>
             <ul class="menu-list">
                 <li>
-                    <a href="{{route('index')}}" class="active pt0">Home</a>
+                    <a href="{{route('index')}}" class="pt0 {{ (request()->is('/')) ? 'active' : '' }}">Home</a>
                 </li>
                 <li>
-                    <a href="{{route('index')}}" class="active pt0">About Us</a>
+                    <a href="{{route('index')}}" class="pt0 {{ (request()->is('about-us')) ? 'active' : '' }}">About Us</a>
                 </li>
-                <li><a href="#">Rooms <em class="fa fa-chevron-down"></em></a>
+                <li><a href="#" >Rooms <em class="fa fa-chevron-down {{ (request()->is('rooms*')) ? 'active' : '' }}"></em></a>
                     <ul>
                         <li>
-                            <a href="{{route('single')}}">Single</a>
+                            <a href="{{route('single')}}" class="{{ (request()->is('rooms/single-rooms')) ? 'active' : '' }}">Single</a>
                         </li>
                         <li>
-                            <a href="{{route('mini')}}">Mini Suites</a>
+                            <a href="{{route('mini')}}" class="{{ (request()->is('rooms/mini-suites-rooms')) ? 'active' : '' }}">Mini Suites</a>
                         </li>
                         <li>
-                            <a href="{{route('double')}}">Double</a>
+                            <a href="{{route('double')}}" class="{{ (request()->is('rooms/double-rooms')) ? 'active' : '' }}">Double</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="{{route('gallery')}}" class="active pt0">Gallery</a>
+                    <a href="{{route('gallery')}}" class="{{ (request()->is('gallery')) ? 'active' : '' }} pt0">Gallery</a>
                 </li>
                 <li>
-                    <a href="{{route('faqs')}}" class="active pt0">FAQs</a>
+                    <a href="{{route('faqs')}}" class="{{ (request()->is('faqs')) ? 'active' : '' }} pt0">FAQs</a>
                 </li>
                 <li>
-                    <a href="{{route('contact')}}" class="active pt0">Contact Us</a>
+                    <a href="{{route('contact')}}" class="{{ (request()->is('contact-us')) ? 'active' : '' }} pt0">Contact Us</a>
                 </li>
             </ul>
         </div>
